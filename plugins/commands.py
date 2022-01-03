@@ -25,13 +25,13 @@ async def start(c, m, cb=False):
 `You can store your Telegram Media for permanent Link!`
 
 
-**👲 Maintained By:** {owner.mention(style='md')}
+**👲 Maintained By:** @lovelyanush
 """
 
     # Buttons
     buttons = [
         [
-            InlineKeyboardButton('My Father 👨‍✈️', url=f"https://t.me/{owner_username}"),
+            InlineKeyboardButton('My Father 👨‍✈️', url=f"https://t.me/lovelyanush"),
             InlineKeyboardButton('Help 💡', callback_data="help")
         ],
         [
@@ -52,7 +52,7 @@ async def start(c, m, cb=False):
 
         if msg.empty:
             owner = await c.get_users(int(OWNER_ID))
-            return await m.reply_text(f"🥴 Sorry bro your file was missing\n\nPlease contact my owner 👉 {owner.mention(style='md')}")
+            return await m.reply_text(f"🥴 Sorry bro your file was missing\n\nPlease contact my owner 👉 @lovelyanush")
         
         caption = f"{msg.caption.markdown}\n\n\n" if msg.caption else ""
 
